@@ -27,10 +27,11 @@ public class LearningCurve : MonoBehaviour
 
         while (playerHp > 0)
         {
-            
-            Debug.LogFormat("You're life is {0} go fight!", playerHp);
-            playerHp--;
-            
+            if (playerHp > 1)
+            {
+                Debug.LogFormat("You're life is {0} go fight!", playerHp);
+                playerHp--;
+            }
 
             
         }
