@@ -4,24 +4,43 @@ using UnityEngine;
 
 public class LearningCurve : MonoBehaviour
 {
-    int money = 120;
+    public int money = 120;
 
     void Start()
     {
-        Dictionary<string, int> itemInventory = new Dictionary<string, int>()
+        //Dictionary<string, int> itemInventory = new Dictionary<string, int>()
+        //{
+        //    { "Potion" ,5},
+        //    { "MagicDrink",3 },
+        //    { "Arrow",1 }
+
+        //};
+
+
+        //foreach (KeyValuePair<string,int> kvp in itemInventory )
+        //{
+        //    if(kvp.Value <= money)
+        //    Debug.LogFormat("You can buy {0} is {1}　EA",kvp.Key ,money / kvp.Value);
+        //}
+
+        int playerHp = 7;
+
+        while (playerHp >= 0 )
         {
-            { "Potion" ,5},
-            { "MagicDrink",3 },
-            { "Arrow",1 }
+            if (playerHp >= 1)
+            {
+                Debug.LogFormat("You're life is {0} go fight!", playerHp);
+                playerHp--;
+            }
 
-        };
+            //else if(playerHp == 0)
+            //{
+            //    Debug.LogFormat("You're life is {0} you died",playerHp);
 
-
-        foreach (KeyValuePair<string,int> kvp in itemInventory )
-        {
-            if(kvp.Value <= money)
-            Debug.LogFormat("You can buy {0} is {1}　EA",kvp.Key ,money / kvp.Value);
+            //}
         }
+
+
 
     }
 
