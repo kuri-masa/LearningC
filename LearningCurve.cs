@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class LearningCurve : MonoBehaviour
 {
-    public int money = 120;
+    Character chr = new Character();
+    Character chrS = new Character("agasa");
 
     void Start()
     {
-        Character hero = new Character();
-        Debug.LogFormat("Hero :name {0} EXP {1}.", hero.name,hero.exp);
+        chr.printStatsInfo();
+        chrS.printStatsInfo();
+
     }
 
 

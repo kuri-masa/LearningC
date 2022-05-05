@@ -12,10 +12,15 @@ public class Character
     {
         name = "no data";
     }
-
     //カスタムコンストラクト
     public Character(string name)
     {
         this.name = name;
     }
+
+    public void printStatsInfo()
+    {
+        Debug.LogFormat("NAME[{0}] EXP[{1}]",name,exp);
+    }
+
 }
