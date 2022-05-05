@@ -8,6 +8,7 @@ public class LearningCurve : MonoBehaviour
     
 
     Weapon huntingBow = new Weapon("Hunting bow", 150);
+    
 
     void Start()
     {
@@ -17,6 +18,12 @@ public class LearningCurve : MonoBehaviour
         hero.printStatsInfo();
         hero2.printStatsInfo();
 
+        Weapon warBow = huntingBow;
+        warBow.name = "WarBow";
+        warBow.damage = 250;
+
+        huntingBow.PrintWeaponStats();
+        warBow.PrintWeaponStats();
     }
 
 

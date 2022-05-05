@@ -7,6 +7,11 @@ public class Character
     public string name;
     public int exp = 0;
 
+    void Reset()
+    {
+        this.name = "Not set";
+        this.exp = 0;
+    }
 
     //コンストラクト
     public Character()
@@ -26,6 +31,7 @@ public class Character
 
 }
 
+//ストラクト
 public struct Weapon
 {
     public string name;
