@@ -7,6 +7,7 @@ public class LearningCurve : MonoBehaviour
     Character chr = new Character();
     Character chrS = new Character("agasa");
 
+
     void Start()
     {
         chr.printStatsInfo();
