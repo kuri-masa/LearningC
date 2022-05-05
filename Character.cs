@@ -8,4 +8,10 @@ public class Character
     public int exp = 0;
 
 
+    public Character()
+    {
+        name = "no data";
+    }
+
+
 }
