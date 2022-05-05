@@ -7,12 +7,14 @@ public class Character
     public string name;
     public int exp = 0;
 
-    LearningCurve system = new LearningCurve();
 
     public Character()
     {
-        name = system.nameC;
+        name = "no data";
     }
 
-
+    public Character(string name)
+    {
+        this.name = name;
+    }
 }
