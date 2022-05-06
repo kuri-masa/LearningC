@@ -7,7 +7,7 @@ public class Character
     public string name;
     public int exp = 0;
 
-    void Reset()
+    private void Reset()
     {
         this.name = "Not set";
         this.exp = 0;
@@ -23,6 +23,10 @@ public class Character
     {
         this.name = name;
     }
+    public Character(int exp)
+    {
+        this.exp = exp;
+    }
 
     public void printStatsInfo()
     {
@@ -31,7 +35,7 @@ public class Character
 
 }
 
-//ストラクト
+//ストラクタ
 public struct Weapon
 {
     public string name;
@@ -41,7 +45,10 @@ public struct Weapon
     {
         this.name = name;
         this.damage = damage;
+    
     }
+
+    
 
     public void PrintWeaponStats()
     {
