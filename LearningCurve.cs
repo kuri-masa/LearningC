@@ -4,26 +4,27 @@ using UnityEngine;
 
 public class LearningCurve : MonoBehaviour
 {
-    Character hero = new Character();
-    
+    Character heroName = new Character("WLYWNKA");
+    Character heroExp = new Character(999);
 
-    Weapon huntingBow = new Weapon("Hunting bow", 150);
+    Weapon huntingBow = new Weapon("Hunting bow",150);
+    Paladin knight = new Paladin("King Areser");
+
     
 
     void Start()
     {
-        Character hero2 = hero;
-        hero2.name = "sir Krane the Brave";
+        knight.printStatsInfo();
 
-        hero.printStatsInfo();
-        hero2.printStatsInfo();
+        //heroName.printStatsInfo();
+        //heroExp.printStatsInfo();
 
-        Weapon warBow = huntingBow;
-        warBow.name = "WarBow";
-        warBow.damage = 250;
+        //Weapon warBow = huntingBow;
+        //warBow.name = "WarBow";
+        //warBow.damage = 250;
 
-        huntingBow.PrintWeaponStats();
-        warBow.PrintWeaponStats();
+        //huntingBow.PrintWeaponStats();
+        //warBow.PrintWeaponStats();
     }
 
 
